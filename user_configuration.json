@@ -1,0 +1,186 @@
+{
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        },
+        "firewall_config": {
+            "firewall": "ufw"
+        },
+        "fonts_config": {
+            "fonts": [
+                "noto-fonts-emoji",
+                "noto-fonts-cjk"
+            ]
+        },
+        "print_service_config": {
+            "enabled": false
+        }
+    },
+    "archinstall_language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Systemd-boot",
+        "removable": false,
+        "uki": true
+    },
+    "custom_commands": [
+        "pacman -S --noconfirm xdg-user-dirs",
+        "runuser -u minsik -- env HOME=/home/minsik LC_ALL=C.UTF-8 xdg-user-dirs-update --force",
+        "printf '%s\\n' 'GTK_IM_MODULE=fcitx' 'QT_IM_MODULE=fcitx' 'QT4_IM_MODULE=fcitx' 'QT5_IM_MODULE=fcitx' 'XMODIFIERS=@im=fcitx' >> /etc/environment",
+        "systemctl enable paccache.timer",
+        "install -d -o minsik -g minsik /home/minsik/yay-build",
+        "printf '%s\\n' '#!/bin/bash' 'set -eu' 'cd /home/minsik/yay-build' 'if [ ! -d yay/.git ]; then runuser -u minsik -- git clone https://aur.archlinux.org/yay.git yay; fi' 'chown -R minsik:minsik yay' 'cd yay' 'runuser -u minsik -- makepkg --syncdeps --noconfirm' 'pacman -U --noconfirm ./yay-*.pkg.tar.zst' 'cd /' 'rm -rf /home/minsik/yay-build' > /usr/local/bin/install-yay-minsik",
+        "chmod 755 /usr/local/bin/install-yay-minsik",
+        "printf '%s\\n' '[Unit]' 'Description=Build and install yay for minsik' 'Wants=network-online.target' 'After=network-online.target' '' '[Service]' 'Type=oneshot' 'ExecStart=/usr/local/bin/install-yay-minsik' 'ExecStartPost=/usr/bin/systemctl disable yay-autoinstall.service' '' '[Install]' 'WantedBy=multi-user.target' > /etc/systemd/system/yay-autoinstall.service",
+        "systemctl enable yay-autoinstall.service",
+        "flatpak remote-add --if-not-exists --system flathub https://dl.flathub.org/repo/flathub.flatpakrepo",
+        "printf '%s\\n' '#!/bin/bash' 'set -eu' 'flatpak install --system --noninteractive flathub com.todoist.Todoist' 'flatpak install --system --noninteractive flathub io.github.Qalculate' > /usr/local/bin/install-todoist",
+        "chmod 755 /usr/local/bin/install-todoist",
+        "printf '%s\\n' '[Unit]' 'Description=Install Todoist and Qalculate Flatpaks' 'Wants=network-online.target' 'After=network-online.target' '' '[Service]' 'Type=oneshot' 'ExecStart=/usr/local/bin/install-todoist' 'ExecStartPost=/usr/bin/systemctl disable todoist-autoinstall.service' '' '[Install]' 'WantedBy=multi-user.target' > /etc/systemd/system/todoist-autoinstall.service",
+        "systemctl enable todoist-autoinstall.service",
+        "mkinitcpio -P"
+    ],
+    "disk_config": {
+        "btrfs_options": {
+            "snapshot_config": null
+        },
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot",
+                            "esp"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "ee8f242a-e4fb-4720-b6fa-cea131689615",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "fa84f38e-6bd1-49df-8f95-79dc00b8129a",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "B",
+                            "value": 249923895296
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "firmware_optdeps": [],
+    "hostname": "archlinux",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "console_font": "default8x16",
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+        "alacritty",
+        "dolphin",
+        "kdeconnect",
+        "kate",
+        "kwrite",
+        "obsidian",
+        "peazip",
+        "go",
+        "haruna",
+        "ffmpegthumbs",
+        "gwenview",
+        "exfatprogs",
+        "fastfetch",
+        "nano",
+        "intel-ucode",
+        "sudo",
+        "which",
+        "firefox-developer-edition",
+        "firefox-developer-edition-i18n-ko",
+        "fcitx5-im",
+        "fcitx5-hangul",
+        "git",
+        "base-devel",
+        "pacman-contrib",
+        "flatpak"
+    ],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
+    },
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "plasma-login-manager",
+        "profile": {
+            "custom_settings": {
+                "KDE Plasma": {
+                    "plasma_flavor": "plasma-meta"
+                }
+            },
+            "details": [
+                "KDE Plasma"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
+    "timezone": "Asia/Seoul",
+    "version": "4.5"
+}
