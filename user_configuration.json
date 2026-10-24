@@ -154,7 +154,9 @@
         "git",
         "base-devel",
         "pacman-contrib",
-        "flatpak"
+        "flatpak",
+        "btop",
+        "sshfs"
     ],
     "pacman_config": {
         "color": true,
