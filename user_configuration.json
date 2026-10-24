@@ -131,6 +131,7 @@
     },
     "ntp": true,
     "packages": [
+        "chezmoi",
         "alacritty",
         "dolphin",
         "kdeconnect",
