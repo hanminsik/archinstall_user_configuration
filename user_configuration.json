@@ -40,7 +40,8 @@
         "printf '%s\\n' '#!/bin/bash' 'set -eu' 'flatpak install --system --noninteractive flathub com.todoist.Todoist' 'flatpak install --system --noninteractive flathub io.github.Qalculate' > /usr/local/bin/install-todoist",
         "chmod 755 /usr/local/bin/install-todoist",
         "printf '%s\\n' '[Unit]' 'Description=Install Todoist and Qalculate Flatpaks' 'Wants=network-online.target' 'After=network-online.target' '' '[Service]' 'Type=oneshot' 'ExecStart=/usr/local/bin/install-todoist' 'ExecStartPost=/usr/bin/systemctl disable todoist-autoinstall.service' '' '[Install]' 'WantedBy=multi-user.target' > /etc/systemd/system/todoist-autoinstall.service",
-        "systemctl enable todoist-autoinstall.service"
+        "systemctl enable todoist-autoinstall.service",
+        "systemctl enable bluetooth.service"
     ],
     "disk_config": {
         "btrfs_options": {
