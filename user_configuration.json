@@ -42,7 +42,8 @@
         "chmod 755 /usr/local/bin/install-todoist",
         "printf '%s\\n' '[Unit]' 'Description=Install Todoist and Qalculate Flatpaks' 'Wants=network-online.target' 'After=network-online.target' '' '[Service]' 'Type=oneshot' 'ExecStart=/usr/local/bin/install-todoist' 'ExecStartPost=/usr/bin/systemctl disable todoist-autoinstall.service' '' '[Install]' 'WantedBy=multi-user.target' > /etc/systemd/system/todoist-autoinstall.service",
         "systemctl enable todoist-autoinstall.service",
-        "systemctl enable bluetooth.service"
+        "systemctl enable bluetooth.service",
+        "install -d /etc/cmdline.d && printf '%s\\n' 'mitigations=off' > /etc/cmdline.d/mitigations.conf"
     ],
     "disk_config": {
         "btrfs_options": {
