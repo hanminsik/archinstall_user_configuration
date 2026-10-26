@@ -123,6 +123,7 @@
     "ntp": true,
     "packages": [
         "chezmoi",
+        "keyd",
         "alacritty",
         "dolphin",
         "kdeconnect",
