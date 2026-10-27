@@ -33,6 +33,7 @@
         "printf '%s\\n' 'GTK_IM_MODULE=fcitx' 'QT_IM_MODULE=fcitx' 'QT4_IM_MODULE=fcitx' 'QT5_IM_MODULE=fcitx' 'XMODIFIERS=@im=fcitx' >> /etc/environment",
         "systemctl enable paccache.timer",
         "systemctl enable bluetooth.service",
+        "systemctl enable --now fstrim.timer",
         "printf '%s\\n' 'rw quiet mitigations=off' > /etc/kernel/cmdline"
     ],
     "disk_config": {
