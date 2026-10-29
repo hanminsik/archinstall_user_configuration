@@ -110,7 +110,7 @@
     "firmware_optdeps": [],
     "hostname": "archlinux",
     "kernels": [
-        "linux"
+        "linux-zen"
     ],
     "locale_config": {
         "console_font": "default8x16",
@@ -123,6 +123,7 @@
     },
     "ntp": true,
     "packages": [
+        "linux-zen-headers",
         "chezmoi",
         "keyd",
         "alacritty",
@@ -132,7 +133,6 @@
         "kwrite",
         "obsidian",
         "peazip",
-        "go",
         "haruna",
         "ffmpegthumbs",
         "gwenview",
