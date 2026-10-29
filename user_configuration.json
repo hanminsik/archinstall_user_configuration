@@ -23,16 +23,7 @@
         "removable": false,
         "uki": true
     },
-    "custom_commands": [
-        "pacman -Rns --noconfirm htop",
-        "pacman -S --noconfirm xdg-user-dirs",
-        "runuser -u minsik -- env HOME=/home/minsik LC_ALL=C.UTF-8 xdg-user-dirs-update --force",
-        "printf '%s\\n' 'GTK_IM_MODULE=fcitx' 'QT_IM_MODULE=fcitx' 'QT4_IM_MODULE=fcitx' 'QT5_IM_MODULE=fcitx' 'XMODIFIERS=@im=fcitx' >> /etc/environment",
-        "systemctl enable paccache.timer",
-        "systemctl enable bluetooth.service",
-        "systemctl enable fstrim.timer",
-        "printf '%s\\n' 'rw quiet mitigations=off' > /etc/kernel/cmdline"
-    ],
+    "custom_commands": [],
     "disk_config": {
         "btrfs_options": {
             "snapshot_config": null
