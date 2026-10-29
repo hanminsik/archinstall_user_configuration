@@ -25,7 +25,7 @@
     },
     "custom_commands": [
         "install -d -o minsik -g minsik /home/minsik/.local /home/minsik/.local/bin",
-        "curl -fsSL -o /home/minsik/.local/bin/setup.sh https://raw.githubusercontent.com/hanminsik/archlinux-setup/main/setup.sh",
+        "curl -fsSL -o /home/minsik/.local/bin/setup.sh https://raw.githubusercontent.com/hanminsik/archlinux-setup/refs/heads/main/setup.sh",
         "chown minsik:minsik /home/minsik/.local/bin/setup.sh",
         "chmod 755 /home/minsik/.local/bin/setup.sh"
     ],
