@@ -23,7 +23,12 @@
         "removable": false,
         "uki": true
     },
-    "custom_commands": [],
+    "custom_commands": [
+        "install -d -o minsik -g minsik /home/minsik/.local /home/minsik/.local/bin",
+        "curl -fsSL -o /home/minsik/.local/bin/setup.sh https://raw.githubusercontent.com/hanminsik/archlinux-setup/main/setup.sh",
+        "chown minsik:minsik /home/minsik/.local/bin/setup.sh",
+        "chmod 755 /home/minsik/.local/bin/setup.sh"
+    ],
     "disk_config": {
         "btrfs_options": {
             "snapshot_config": null
