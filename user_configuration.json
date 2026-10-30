@@ -146,6 +146,7 @@
         "peazip",
         "sudo",
         "sshfs",
+        "vi",
         "which"
     ],
     "pacman_config": {
