@@ -1,0 +1,179 @@
+{
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        },
+        "fonts_config": {
+            "fonts": [
+                "noto-fonts-emoji",
+                "noto-fonts-cjk"
+            ]
+        },
+        "print_service_config": {
+            "enabled": false
+        }
+    },
+    "archinstall_language": "English",
+    "auth_config": {},
+    "bootloader_config": {
+        "bootloader": "Systemd-boot",
+        "removable": false,
+        "uki": true
+    },
+    "custom_commands": [
+        "install -d -o minsik -g minsik /home/minsik/.local /home/minsik/.local/bin",
+        "curl -fsSL -o /home/minsik/.local/bin/setup.sh https://raw.githubusercontent.com/hanminsik/archlinux-setup/refs/heads/main/setup.sh",
+        "chown minsik:minsik /home/minsik/.local/bin/setup.sh",
+        "chmod 755 /home/minsik/.local/bin/setup.sh"
+    ],
+    "disk_config": {
+        "btrfs_options": {
+            "snapshot_config": null
+        },
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "boot",
+                            "esp"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "ee8f242a-e4fb-4720-b6fa-cea131689615",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "fa84f38e-6bd1-49df-8f95-79dc00b8129a",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "B",
+                            "value": 249923895296
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 4096
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "firmware_optdeps": [],
+    "hostname": "archlinux",
+    "kernels": [
+        "linux-zen"
+    ],
+    "locale_config": {
+        "console_font": "default8x16",
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "ko_KR.UTF-8"
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+        "alacritty",
+        "base-devel",
+        "btop",
+        "chezmoi",
+        "dolphin",
+        "exfatprogs",
+        "fastfetch",
+        "fcitx5-im",
+        "fcitx5-hangul",
+        "ffmpegthumbs",
+        "firefox-developer-edition",
+        "firefox-developer-edition-i18n-ko",
+        "firefoxpwa",
+        "flatpak",
+        "git",
+        "go",
+        "gwenview",
+        "haruna",
+        "kate",
+        "kdeconnect",
+        "keyd",
+        "konsole",
+        "kwrite",
+        "linux-zen-headers",
+        "nano",
+        "obsidian",
+        "pacman-contrib",
+        "peazip",
+        "sudo",
+        "sshfs",
+        "vi",
+        "which"
+    ],
+    "pacman_config": {
+        "color": true,
+        "parallel_downloads": 5
+    },
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "plasma-login-manager",
+        "profile": {
+            "custom_settings": {
+                "KDE Plasma": {
+                    "plasma_flavor": "plasma-meta"
+                }
+            },
+            "details": [
+                "KDE Plasma"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": null,
+    "services": [],
+    "swap": {
+        "algorithm": "zstd",
+        "enabled": true
+    },
+    "timezone": "Asia/Seoul",
+    "version": "4.5"
+}
