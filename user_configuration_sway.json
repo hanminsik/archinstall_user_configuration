@@ -130,6 +130,7 @@
         "git",
         "go",
         "grim",
+        "ironbar",
         "kdeconnect",
         "keyd",
         "linux-zen-headers",
