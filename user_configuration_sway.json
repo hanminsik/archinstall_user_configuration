@@ -113,7 +113,12 @@
     },
     "ntp": true,
     "packages": [
-        "sway"
+        "foot",
+        "fuzzel",
+        "rofi-wayland",
+        "sway",
+        "swaybg",
+        "waybar"
     ],
     "pacman_config": {
         "color": true,
