@@ -116,9 +116,8 @@
     },
     "ntp": true,
     "packages": [
-        "alacritty",
+        "base",
         "base-devel",
-        "btop",
         "chezmoi",
         "dolphin",
         "exfatprogs",
@@ -128,8 +127,6 @@
         "ffmpegthumbs",
         "firefox-developer-edition",
         "firefox-developer-edition-i18n-ko",
-        "firefoxpwa",
-        "flatpak",
         "git",
         "go",
         "gwenview",
@@ -140,14 +137,12 @@
         "konsole",
         "kwrite",
         "linux-zen-headers",
-        "nano",
+        "neovim",
         "obsidian",
         "pacman-contrib",
         "peazip",
         "sudo",
-        "sshfs",
-        "vi",
-        "which"
+        "sshfs"
     ],
     "pacman_config": {
         "color": true,
