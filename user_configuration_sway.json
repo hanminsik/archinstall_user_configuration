@@ -138,6 +138,7 @@
         "pacman-contrib",
         "pavucontrol",
         "rofi-wayland",
+        "slurp",
         "sshfs",
         "sway",
         "swaybg",
