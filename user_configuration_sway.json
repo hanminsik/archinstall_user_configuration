@@ -149,7 +149,8 @@
         "ttf-firacode-nerd",
         "udiskie",
         "waybar",
-        "wayvnc"
+        "wayvnc",
+        "wlsunset"
     ],
     "pacman_config": {
         "color": true,
