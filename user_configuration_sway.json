@@ -115,6 +115,10 @@
     "packages": [
         "base",
         "base-devel",
+        "fastfetch",
+        "fcitx5-configtool",
+        "fcitx5-hangul",
+        "fcitx5-im",
         "firefox-developer-edition",
         "firefox-developer-edition-i18n-ko",
         "foot",
