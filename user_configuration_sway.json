@@ -113,14 +113,22 @@
     },
     "ntp": true,
     "packages": [
+        "base",
+        "base-devel",
+        "firefox-developer-edition",
+        "firefox-developer-edition-i18n-ko",
         "foot",
         "fuzzel",
+        "git",
         "mako",
+        "obsidian",
+        "pavucontrol",
         "rofi-wayland",
         "sway",
         "swaybg",
         "sway-contrib",
-        "waybar"
+        "waybar",
+        "wayvnc"
     ],
     "pacman_config": {
         "color": true,
