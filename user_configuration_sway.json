@@ -115,9 +115,11 @@
     "packages": [
         "foot",
         "fuzzel",
+        "mako",
         "rofi-wayland",
         "sway",
         "swaybg",
+        "sway-contrib",
         "waybar"
     ],
     "pacman_config": {
