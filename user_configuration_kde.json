@@ -142,6 +142,8 @@
         "openssh",
         "pacman-contrib",
         "peazip",
+        "rofi-calc",
+        "rofi-wayland",
         "sudo",
         "sshfs"
     ],
