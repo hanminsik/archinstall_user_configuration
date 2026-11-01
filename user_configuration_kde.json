@@ -142,6 +142,7 @@
         "openssh",
         "pacman-contrib",
         "peazip",
+        "qalculate-qt",
         "sudo",
         "sshfs"
     ],
