@@ -139,6 +139,7 @@
         "linux-zen-headers",
         "neovim",
         "obsidian",
+        "openssh",
         "pacman-contrib",
         "peazip",
         "sudo",
