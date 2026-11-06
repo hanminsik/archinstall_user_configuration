@@ -116,6 +116,7 @@
         "base",
         "base-devel",
         "chezmoi",
+        "cmake",
         "exfatprogs",
         "fastfetch",
         "fcitx5-configtool",
