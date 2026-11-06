@@ -144,7 +144,8 @@
         "peazip",
         "qalculate-qt",
         "sudo",
-        "sshfs"
+        "sshfs",
+        "ttf-firacode-nerd"
     ],
     "pacman_config": {
         "color": true,
