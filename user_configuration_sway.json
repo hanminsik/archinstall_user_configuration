@@ -149,6 +149,7 @@
         "udiskie",
         "waybar",
         "wayvnc",
+        "wezterm",
         "wlsunset"
     ],
     "pacman_config": {
