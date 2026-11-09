@@ -147,6 +147,7 @@
         "pacman-contrib",
         "qalculate-qt",
         "qtcreator",
+        "ripgrep",
         "sudo",
         "sshfs",
         "ttf-fira-code",
