@@ -9,7 +9,10 @@
         "fonts_config": {
             "fonts": [
                 "noto-fonts-emoji",
-                "noto-fonts-cjk"
+                "noto-fonts-cjk",
+                "ttf-liberation",
+                "ttf-dejavu",
+                "noto-fonts"
             ]
         },
         "print_service_config": {
@@ -116,6 +119,7 @@
     },
     "ntp": true,
     "packages": [
+        "7zip",
         "base",
         "base-devel",
         "chezmoi",
@@ -125,23 +129,22 @@
         "fcitx5-im",
         "fcitx5-hangul",
         "ffmpegthumbs",
-        "firefox-developer-edition",
-        "firefox-developer-edition-i18n-ko",
+        "firefox",
+        "firefox-i18n-ko",
         "git",
         "go",
         "haruna",
         "kate",
         "kdeconnect",
         "keyd",
-        "konsole",
         "kwrite",
         "linux-zen-headers",
-        "nano",
+        "neovim",
         "obsidian",
         "openssh",
         "pacman-contrib",
-        "peazip",
         "qalculate-qt",
+        "qtcreator",
         "sudo",
         "sshfs",
         "ttf-fira-code",
