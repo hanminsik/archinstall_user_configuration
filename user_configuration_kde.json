@@ -133,7 +133,6 @@
         "kate",
         "kdeconnect",
         "keyd",
-        "kitty",
         "konsole",
         "kwrite",
         "linux-zen-headers",
@@ -145,7 +144,8 @@
         "qalculate-qt",
         "sudo",
         "sshfs",
-        "ttf-firacode-nerd"
+        "ttf-fira-code",
+        "wezterm"
     ],
     "pacman_config": {
         "color": true,
