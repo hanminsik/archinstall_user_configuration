@@ -123,6 +123,7 @@
         "base",
         "base-devel",
         "chezmoi",
+        "cmake",
         "dolphin",
         "exfatprogs",
         "fastfetch",
