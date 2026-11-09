@@ -145,6 +145,7 @@
         "sudo",
         "sshfs",
         "ttf-fira-code",
+        "ttf-nerd-fonts-symbols",
         "wezterm"
     ],
     "pacman_config": {
