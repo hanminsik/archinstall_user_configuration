@@ -153,7 +153,8 @@
         "sshfs",
         "ttf-fira-code",
         "ttf-nerd-fonts-symbols",
-        "wezterm"
+        "wezterm",
+        "wl-clipboard"
     ],
     "pacman_config": {
         "color": true,
