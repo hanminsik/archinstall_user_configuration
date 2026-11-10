@@ -120,6 +120,7 @@
     "ntp": true,
     "packages": [
         "7zip",
+        "adwaita-fonts",
         "base",
         "base-devel",
         "chezmoi",
@@ -152,7 +153,6 @@
         "sudo",
         "sshfs",
         "timeshift",
-        "ttf-fira-code",
         "ttf-nerd-fonts-symbols",
         "wezterm",
         "wl-clipboard"
