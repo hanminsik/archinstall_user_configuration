@@ -125,6 +125,7 @@
         "base-devel",
         "chezmoi",
         "cmake",
+        "cronie",
         "dolphin",
         "exfatprogs",
         "eza",
