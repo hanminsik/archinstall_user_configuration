@@ -137,6 +137,7 @@
         "ffmpegthumbs",
         "firefox",
         "firefox-i18n-ko",
+        "ghostty",
         "git",
         "go",
         "kate",
@@ -156,7 +157,6 @@
         "sshfs",
         "timeshift",
         "ttf-nerd-fonts-symbols",
-        "wezterm",
         "wl-clipboard"
     ],
     "pacman_config": {
