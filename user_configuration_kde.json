@@ -119,7 +119,6 @@
     },
     "ntp": true,
     "packages": [
-        "7zip",
         "adwaita-fonts",
         "base",
         "base-devel",
@@ -144,7 +143,6 @@
         "go",
         "kate",
         "kdeconnect",
-        "kdialog",
         "keyd",
         "kwrite",
         "lazygit",
@@ -155,6 +153,7 @@
         "obsidian",
         "openssh",
         "pacman-contrib",
+        "peazip",
         "qalculate-qt",
         "ripgrep",
         "sudo",
