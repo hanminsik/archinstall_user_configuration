@@ -128,6 +128,7 @@
         "cmake",
         "cronie",
         "dolphin",
+        "evtest",
         "exfatprogs",
         "eza",
         "fastfetch",
