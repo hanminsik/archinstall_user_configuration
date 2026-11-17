@@ -124,7 +124,6 @@
         "base-devel",
         "chezmoi",
         "cmake",
-        "cpupower",
         "cronie",
         "dolphin",
         "exfatprogs",
