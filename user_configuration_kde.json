@@ -150,6 +150,7 @@
         "lazygit",
         "less",
         "linux-zen-headers",
+        "lua-language-server",
         "mpv",
         "neovim",
         "obsidian",
