@@ -163,11 +163,11 @@
     },
     "profile_config": {
         "gfx_driver": "All open-source",
-        "greeter": "plasma-login-manager",
+        "greeter": "sddm",
         "profile": {
             "custom_settings": {
                 "KDE Plasma": {
-                    "plasma_flavor": "plasma-meta"
+                    "plasma_flavor": "plasma-desktop"
                 }
             },
             "details": [
