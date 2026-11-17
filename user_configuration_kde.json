@@ -152,8 +152,9 @@
         "pacman-contrib",
         "peazip",
         "qalculate-qt",
-        "sudo",
+        "spectacle",
         "sshfs",
+        "sudo",
         "timeshift",
         "ttf-nerd-fonts-symbols",
         "wl-clipboard"
