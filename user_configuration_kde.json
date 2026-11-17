@@ -125,6 +125,7 @@
         "bat",
         "chezmoi",
         "cmake",
+        "cpupower",
         "cronie",
         "dolphin",
         "evtest",
