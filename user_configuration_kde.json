@@ -122,6 +122,7 @@
         "adwaita-fonts",
         "base",
         "base-devel",
+        "bluedevil",
         "chezmoi",
         "cmake",
         "cronie",
