@@ -162,6 +162,7 @@
         "sudo",
         "timeshift",
         "ttf-nerd-fonts-symbols",
+        "usbutils",
         "wl-clipboard"
     ],
     "pacman_config": {
