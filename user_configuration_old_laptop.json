@@ -123,7 +123,6 @@
         "base",
         "base-devel",
         "bluedevil",
-        "chezmoi",
         "cronie",
         "dolphin",
         "exfatprogs",
@@ -132,8 +131,6 @@
         "fcitx5-hangul",
         "fcitx5-im",
         "fcitx5-qt",
-        "firefox-developer-edition",
-        "firefox-developer-edition-i18n-ko",
         "ghostty",
         "git",
         "go",
@@ -148,8 +145,6 @@
         "sshfs",
         "sudo",
         "ttf-nerd-fonts-symbols",
-        "usbutils",
-        "wl-clipboard"
     ],
     "pacman_config": {
         "color": true,
